@@ -6,7 +6,7 @@ import Ellipse_4 from '../assets/Ellipse_4.png'
 function Home() {
   return (
     <div className="box-border">
-        <div id='First_section' className="grid grid-cols-3 bg-primary w-full h-[48.063rem]">
+        <div id='First_section' className="grid grid-cols-3 bg-primary max-w-[1512px] selection:w-full h-[48.063rem]">
           <div className="flex flex-col items-center justify-around">
             <h1 className="font-normal text-[7.2rem] text-white font-alfa-slab">Gebeya</h1>
             <div className="flex items-center justify-center w-[16.25rem] h-[16.25rem] rounded-full">
@@ -35,6 +35,11 @@ function Home() {
             <div className="flex flex-row gap-8">
               <button className='bg-secondary text-white p-2 rounded-l-full'><FaAngleLeft/></button>
               <button className="bg-secondary text-white p-2 rounded-r-full"><FaAngleRight/></button>
+            </div>
+          </div>
+          <div id='1st_sub_section' className="grid grid-rows-3 pl-20">
+            <div className="w-[27.188rem] h-[31.063rem] border-2 border-[808080] rounded-2x1">
+
             </div>
           </div>
         </div>
