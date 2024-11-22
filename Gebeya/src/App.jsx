@@ -1,10 +1,20 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import Cart from './pages/Cart'
+import SharedLayout from "./pages/SharedLayout"
 
 function App() {
 
   return (
-    <>
-      <h1 className='bg-purple-700 text-white font-bold text-lg'>Gebeya App</h1>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <SharedLayout/>}>
+        <Route index element={<Home/>}/>
+        <Route path="kids" element={<Cart/>}/>
+        <Route path="*" element={<Error/>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
