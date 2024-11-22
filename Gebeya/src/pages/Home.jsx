@@ -1,11 +1,12 @@
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import Ellipse_5 from '../assets/Ellipse_5.png';
 import Ellipse_3 from '../assets/Ellipse_3.png';
 import Ellipse_4 from '../assets/Ellipse_4.png'
 
 function Home() {
   return (
-    <div>
-        <div className="grid grid-cols-3 bg-primary w-full h-[48.063rem]">
+    <div className="box-border">
+        <div id='First_section' className="grid grid-cols-3 bg-primary w-full h-[48.063rem]">
           <div className="flex flex-col items-center justify-around">
             <h1 className="font-normal text-[7.2rem] text-white font-alfa-slab">Gebeya</h1>
             <div className="flex items-center justify-center w-[16.25rem] h-[16.25rem] rounded-full">
@@ -25,6 +26,16 @@ function Home() {
             <div className="flex items-center justify-center w-[13.938rem] h-[13.938rem] rounded-full">
               <img src={Ellipse_4} alt="Ellipse_4"/>
             </div>  
+          </div>
+        </div>
+        {/* <div id='space' className="h-24 w-full"></div> */}
+        <div id='Second_section' className="">
+          <div className="flex flex-row items-center justify-between p-20">
+            <p className='font-semibold text-4xl'>Latest Collections</p>
+            <div className="flex flex-row gap-8">
+              <button className='bg-secondary text-white p-2 rounded-l-full'><FaAngleLeft/></button>
+              <button className="bg-secondary text-white p-2 rounded-r-full"><FaAngleRight/></button>
+            </div>
           </div>
         </div>
     </div>
