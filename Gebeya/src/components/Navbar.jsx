@@ -10,7 +10,7 @@ function Navbar() {
     <div className="flex items-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
       <div className="flex items-center">
-        <FaUser/>Register/Sign In<RiArrowDownSLine/>
+        <FaUser/> Register/Sign In<RiArrowDownSLine/>
       </div>
       <div className="flex items-center space-x-3"></div>
         <div className="flex items-center space-x-3">
@@ -21,8 +21,9 @@ function Navbar() {
             <NavLink to='/' className='flex flex-row items-center'>More<RiArrowDownSLine/></NavLink>
         </div>
         <div className="flex items-center">
-          <input type="text" placeholder={`${<IoSearch />}Search`} className="h-10 p-2 border rounded-l-2xl"/>
-          <button className="h-10 p-2 bg-primary text-white rounded-r-2xl"><IoSearch/></button>
+          <IoSearch className="absolute transform translate-x-1"/>
+          <input type="text" placeholder={`Search`} className="h-10 p-2 pl-6 border rounded-l-2xl"/>
+          <button className="h-10 w-16 p-2 bg-primary text-white rounded-r-2xl flex items-center justify-center"><IoSearch className='text-xl'/></button>
         </div>
         <div className="flex items-center">
           <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
