@@ -10,6 +10,9 @@ export default {
         primary: '#882BEC',
         secondary: '#FEA301',
       },
+      fontFamily: {
+        'alfa-slab': ['"Alfa Slab One"'],
+      },
     },
   },
   plugins: [],
