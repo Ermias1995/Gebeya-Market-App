@@ -1,4 +1,5 @@
 import {FaUser} from 'react-icons/fa';
+import { FaBagShopping } from "react-icons/fa6";
 import {RiArrowDownSLine} from 'react-icons/ri';
 import { IoSearch } from "react-icons/io5";
 import {NavLink} from 'react-router-dom'
@@ -7,7 +8,7 @@ import Flag from '../assets/Flag.png';
 
 function Navbar() {
   return (
-    <div className="flex items-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
+    <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
       <div className="flex items-center">
         <FaUser/> Register/Sign In<RiArrowDownSLine/>
@@ -28,6 +29,10 @@ function Navbar() {
         <div className="flex items-center">
           <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
           <p className='flex items-center hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
+        </div>
+        <div className="relative flex items-center justify-center w-11 h-11 bg-primary text-white rounded-full">
+          <p className='absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full'>2</p>
+          <FaBagShopping className='text-white'/>
         </div>
     </div>
   )
