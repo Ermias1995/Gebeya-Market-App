@@ -40,8 +40,8 @@ function Home() {
             </div>
           </div>
           <div id='1st_sub_section' className="grid grid-rows-3 pl-20">
-            <div className="max-w-[435px] max-h-[497px] border-2 border-[#808080] p-4 rounded-2xl">
-              <div className="flex flex-col gap-4">
+            <div className="max-w-[435px] max-h-[497px] border-2  p-4 rounded-2xl">
+              <div className="flex flex-col gap-4 border-[#808080]">
                 <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl">
                   <img className="m-auto" src={French_kiss_bag} alt="French_kiss_bag" />
                   <button className='absolute top-5 left-5 bg-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
@@ -52,6 +52,19 @@ function Home() {
                 <div className="flex flex-row items-center justify-between">
                   <h1 className="text-[#808080] border border-[#C1C1C1] rounded-l-full rounded-r-full p-1">Women</h1>
                   <h1 className="text-[#808080] flex flex-row items-center"><IoStar className="text-secondary"/>2k+ rating</h1>
+                </div>
+              </div>
+              <div id='brand_and_price' className="flex flex-row justify-between">
+                <div className="flex flex-col justify-between gap-10">
+                  <div className="flex flex-col gap-0">
+                    <h1 className="text-2xl font-semibold">French kiss Bag</h1>
+                    <h1 className="text-[#808080] text-lg">ALDO</h1>
+                  </div>
+                  <h1 className="text-2xl font-semibold">$500</h1>
+                </div>
+                <div className="flex flex-col justify-between">
+                  <div className=""></div>
+                  <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
                 </div>
               </div>
             </div>
