@@ -1,7 +1,8 @@
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight,FaRegHeart } from "react-icons/fa6";
 import Ellipse_5 from '../assets/Ellipse_5.png';
 import Ellipse_3 from '../assets/Ellipse_3.png';
-import Ellipse_4 from '../assets/Ellipse_4.png'
+import Ellipse_4 from '../assets/Ellipse_4.png';
+import French_kiss_bag from '../assets/French_kiss_bag.png';
 
 function Home() {
   return (
@@ -38,8 +39,19 @@ function Home() {
             </div>
           </div>
           <div id='1st_sub_section' className="grid grid-rows-3 pl-20">
-            <div className="w-[27.188rem] h-[31.063rem] border-2 border-[808080] rounded-2x1">
+            <div className="max-w-[435px] max-h-[497px] border-2 border-[#808080] p-4 rounded-2xl">
+              <div className="flex flex-col">
+                <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl">
+                  <img className="m-auto" src={French_kiss_bag} alt="French_kiss_bag" />
+                  <button className='absolute top-5 left-5 bg-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
+                  <button className='bg-white p-2 w-[67px] h-[34px] items-center 
+                  justify-center border rounded-l-full rounded-r-full text-xs
+                  absolute top-5 right-5'>In Stock</button>
+                </div>
+                <div className="">
 
+                </div>
+              </div>
             </div>
           </div>
         </div>
