@@ -1,4 +1,5 @@
-import { FaAngleLeft, FaAngleRight,FaRegHeart } from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
 import Ellipse_5 from '../assets/Ellipse_5.png';
 import Ellipse_3 from '../assets/Ellipse_3.png';
@@ -100,8 +101,13 @@ function Home() {
                       </div>
                   </div>
               );
-              })}
+            })}
+            <div id='see more button' className="col-span-6 flex justify-center items-center">
+              <button className="bg-primary text-white px-4 py-2 rounded-lg flex flex-row items-center justify-center">See more<FaAnglesRight/></button>
+            </div>
           </div>
+
+          
           
         </div>
     </div>
