@@ -13,6 +13,10 @@ import hats from '../src/assets/hats.png';
 import slippers from '../src/assets/slippers.png';
 import wigs from '../src/assets/wigs.png';
 import cosmetics from '../src/assets/cosmetics.png';
+import casual_wear from '../src/assets/casual_wear.png';
+import vintage from '../src/assets/vintage.png';
+import beauty_products from '../src/assets/beauty_products.png';
+import gym_wears from '../src/assets/gym_wears.png';
 
 export const Latest_collections = [
     {
@@ -66,4 +70,11 @@ export const catagory_items = [
     { id: 10, title: "Slippers", text:'See all collections', image:slippers },
     { id: 11, title: "Wigs", text:'See all collections', image:wigs },
     { id: 12, title: "Cosmetics", text:'See all collections', image:cosmetics },
+];
+
+export const browse_category = [
+    { id: 1, name: "Casual wear", number:20, image:casual_wear },
+    { id: 2, name: "Vintage", number:31, image:vintage },
+    { id: 3, name: "Beauty products", number:24, image:beauty_products },
+    { id: 4, name: "Gym wears", number:62, image:gym_wears },
 ];
