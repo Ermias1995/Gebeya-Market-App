@@ -3,7 +3,7 @@ import footer_icon from '../assets/footer_icon.png';
 
 function Footer() {
   return (
-    <div className='flex justify-stretch bg-primary min-h-[423px] mt-40'>
+    <div className='flex justify-between bg-primary min-h-[423px] mt-40'>
       <div id='Logo side' className="flex flex-col items-center justify-center">
         <div className="flex ml-14">
           <img src={footer_icon} alt="Logo"/>
@@ -14,8 +14,15 @@ function Footer() {
           <button className="text-white text-3xl"><FaXTwitter/></button>
         </div>
       </div>
-      <div className="Link-side">
-
+      <div id='Link-side' className="grid grid-cols-3 text-white">
+        <div className="flex flex-col items-start justify-center">
+          <h1 className="font-bold text-2xl">About</h1>
+          <button className="text-xl">About Us</button>
+          <button className="text-xl">News & Blog</button>
+          <button className="text-xl">Location</button>
+        </div>
+        <div className=""></div>
+        <div className=""></div>
       </div>
     </div>
   )
