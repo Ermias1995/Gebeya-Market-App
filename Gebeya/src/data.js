@@ -54,5 +54,16 @@ export const catagory_buttons = [
 ];
 
 export const catagory_items = [
-    { id: 1, title: "Shoes", text:'See all collections',image:'' },
+    { id: 1, title: "Shoes", text:'See all collections', image:shoes },
+    { id: 2, title: "Bags", text:'See all collections', image:bags },
+    { id: 3, title: "Jackets", text:'See all collections', image:jackets },
+    { id: 4, title: "Lingerie", text:'See all collections', image:lingerie },
+    { id: 5, title: "Belts", text:'See all collections', image:belts },
+    { id: 6, title: "Street wear", text:'See all collections', image:street_wear },
+    { id: 7, title: "Sunglasses", text:'See all collections', image:sunglasses },
+    { id: 8, title: "Sun wear", text:'See all collections', image:sunwear },
+    { id: 9, title: "Hats", text:'See all collections', image:hats },
+    { id: 10, title: "Slippers", text:'See all collections', image:slippers },
+    { id: 11, title: "Wigs", text:'See all collections', image:wigs },
+    { id: 12, title: "Cosmetics", text:'See all collections', image:cosmetics },
 ];
