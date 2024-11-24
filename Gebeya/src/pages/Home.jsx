@@ -4,6 +4,7 @@ import Ellipse_5 from '../assets/Ellipse_5.png';
 import Ellipse_3 from '../assets/Ellipse_3.png';
 import Ellipse_4 from '../assets/Ellipse_4.png';
 import { Latest_collections } from "../data";
+import { catagory_buttons } from "../data";
 
 function Home() {
   return (
@@ -101,7 +102,17 @@ function Home() {
                 </div>
               );
             })}
-
+          </div>
+          <div id='Filtering buttons' className="flex flex-row items-center justify-center gap-5 p-20 max-w-[1344px]">
+            {catagory_buttons.map((button)=>{
+              const { id, text } = button;
+              return (
+                  <button key={id} className="text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-52 h-16 hover:bg-secondary hover:text-white hover:border-none">{text}</button>
+              );
+            })}
+          </div>
+          <div id="collections" className="grid grid-row-2 pl-20 pr-20 gap-10">
+            
           </div>
         </div>
     </div>

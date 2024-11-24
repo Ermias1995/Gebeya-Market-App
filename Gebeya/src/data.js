@@ -31,3 +31,12 @@ export const Latest_collections = [
         rating: "5k+"
     }
 ];
+
+export const catagory_buttons = [
+    { id: 1, text: "Men" },
+    { id: 2, text: "Women" },
+    { id: 3, text: "Kids" },
+    { id: 4, text: "Perfumes" },
+    { id: 5, text: "Sport" },
+    { id: 6, text: "Jewelry" },
+];
