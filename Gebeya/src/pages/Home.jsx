@@ -115,9 +115,15 @@ function Home() {
                vibrant colors and lightweight fabrics perfect for long days and nights.
             </p>
             <button className="bg-secondary text-white p-10 font-medium w-60 h-10 mt-6 rounded-lg flex items-center justify-center">Explore Now</button>
-            <div className="absolute top-[352px] left-[430px] w-6 h-6 bg-primary bg-opacity-50 border rounded-full z-10"></div>
-            <div className="absolute top-[449px] left-[570px] w-10 h-10 bg-primary border rounded-full z-10"></div>
-
+            <div className="absolute top-[352px] left-[430px] w-6 h-6 bg-primary bg-opacity-50 rounded-full z-10"></div>
+            <div className="absolute top-[449px] left-[570px] w-10 h-10 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[144px] left-[689px] w-10 h-10 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[100px] left-[896px] w-10 h-10 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[457px] left-[805px] w-6 h-6 bg-primary bg-opacity-50 rounded-full z-10"></div>
+            <div className="absolute top-[38px] left-[599px] w-6 h-6 bg-secondary rounded-full z-10"></div>
+            <div className="absolute top-[331px] left-[680px] w-14 h-14 bg-secondary rounded-full z-10"></div>
+            <div className="absolute top-[251px] left-[776px] w-10 h-10 bg-[#CAD3B8] rounded-full z-10"></div>
+            <div className="absolute top-[40px] left-[796px] w-10 h-10 bg-[#CAD3B8] rounded-full z-10"></div>
           </div>
         </div>
         
