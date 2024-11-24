@@ -73,7 +73,7 @@ function Home() {
               return(
                 <div key={id} className="max-w-[435px] max-h-[497px] border-2  p-4 rounded-2xl">
                   <div className="flex flex-col gap-4 border-[#808080]">
-                    <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl">
+                    <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl min-h-64">
                       <img className="m-auto" src={image} alt={name} />
                       <button className='absolute top-5 left-5 bg-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
                       <button className='bg-white p-2 w-[67px] h-[34px] items-center 
@@ -81,7 +81,7 @@ function Home() {
                       absolute top-5 right-5'>In Stock</button>
                     </div>
                     <div className="flex flex-row items-center justify-between">
-                      <h1 className="text-[#808080] border border-[#C1C1C1] rounded-l-full rounded-r-full p-1">{category}</h1>
+                      <h1 className="text-[#808080] border border-[#C1C1C1] rounded-l-full rounded-r-full p-1 min-w-12 flex justify-center">{category}</h1>
                       <h1 className="text-[#808080] flex flex-row items-center"><IoStar className="text-secondary"/>{rating} rating</h1>
                     </div>
                   </div>
