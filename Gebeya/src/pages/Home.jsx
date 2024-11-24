@@ -5,6 +5,7 @@ import Ellipse_3 from '../assets/Ellipse_3.png';
 import Ellipse_4 from '../assets/Ellipse_4.png';
 import { Latest_collections } from "../data";
 import { catagory_buttons } from "../data";
+import { catagory_items } from "../data";
 
 function Home() {
   return (
@@ -41,34 +42,6 @@ function Home() {
             </div>
           </div>
           <div id='1st_sub_section' className="grid grid-cols-3 pl-20 pr-20 gap-4">
-            {/* <div className="max-w-[435px] max-h-[497px] border-2  p-4 rounded-2xl">
-              <div className="flex flex-col gap-4 border-[#808080]">
-                <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl">
-                  <img className="m-auto" src={French_kiss_bag} alt="French_kiss_bag" />
-                  <button className='absolute top-5 left-5 bg-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
-                  <button className='bg-white p-2 w-[67px] h-[34px] items-center 
-                  justify-center border rounded-l-full rounded-r-full text-xs
-                  absolute top-5 right-5'>In Stock</button>
-                </div>
-                <div className="flex flex-row items-center justify-between">
-                  <h1 className="text-[#808080] border border-[#C1C1C1] rounded-l-full rounded-r-full p-1">Women</h1>
-                  <h1 className="text-[#808080] flex flex-row items-center"><IoStar className="text-secondary"/>2k+ rating</h1>
-                </div>
-              </div>
-              <div id='brand_and_price' className="flex flex-row justify-between">
-                <div className="flex flex-col justify-between gap-10">
-                  <div className="flex flex-col gap-0">
-                    <h1 className="text-2xl font-semibold">French kiss Bag</h1>
-                    <h1 className="text-[#808080] text-lg">ALDO</h1>
-                  </div>
-                  <h1 className="text-2xl font-semibold">$500</h1>
-                </div>
-                <div className="flex flex-col justify-between">
-                  <div className=""></div>
-                  <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
-                </div>
-              </div>
-            </div> */}
             {Latest_collections.map((item)=>{
               const { id, name, image, brand, rating, price, category } = item;
               return(
@@ -103,6 +76,7 @@ function Home() {
               );
             })}
           </div>
+          
           <div id='Filtering buttons' className="flex flex-row items-center justify-center gap-5 p-20 max-w-[1344px]">
             {catagory_buttons.map((button)=>{
               const { id, text } = button;
@@ -111,9 +85,24 @@ function Home() {
               );
             })}
           </div>
-          <div id="collections" className="grid grid-row-2 pl-20 pr-20 gap-10">
-            
+
+          <div id="collections" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 px-5 gap-y-10 gap-x-6">
+            {catagory_items.map((item) => {
+              const { id, title, text, image } = item;
+              return (
+                  <div key={id} className="m-0 p-0 flex flex-col justify-center items-center border-2 border-[#C1C1C1] px-8 py-6 rounded-2xl gap-4 min-w-[205px]">
+                      <div className="flex justify-center items-center bg-[#F2F2F2] rounded-2xl min-h-[100px] min-w-[143px]">
+                          <img src={image} alt={title} className="object-contain" />
+                      </div>
+                      <div className="flex flex-col justify-center items-center">
+                          <h1 className="text-lg font-semibold">{title}</h1>
+                          <p className="text-[#808080] text-base">{text}</p>
+                      </div>
+                  </div>
+              );
+              })}
           </div>
+          
         </div>
     </div>
   )
