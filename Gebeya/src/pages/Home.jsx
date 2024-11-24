@@ -108,13 +108,16 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[502px] justify-evenly" style={{ backgroundImage: `url(${summer_bg})` }}>
+        <div id='summer banner' className="relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[502px] justify-evenly" style={{ backgroundImage: `url(${summer_bg})` }}>
           <div className="flex flex-col w-2/4 px-10 py-10 gap-10">
             <h1 className="text-[#9847EF] font-semibold text-[40px]">Our Curated Summer Collection</h1>
             <p className="text-[#9847EF] text-2xl">Explore our curated summer collection featuring trending styles,
                vibrant colors and lightweight fabrics perfect for long days and nights.
             </p>
-            <button className="bg-secondary text-white p-10 font-medium w-60 h-12 rounded-lg flex items-center justify-center">Explore Now</button>
+            <button className="bg-secondary text-white p-10 font-medium w-60 h-10 mt-6 rounded-lg flex items-center justify-center">Explore Now</button>
+            <div className="absolute top-[352px] left-[430px] w-6 h-6 bg-primary bg-opacity-50 border rounded-full z-10"></div>
+            <div className="absolute top-[449px] left-[570px] w-10 h-10 bg-primary border rounded-full z-10"></div>
+
           </div>
         </div>
         
