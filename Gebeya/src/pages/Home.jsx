@@ -126,6 +126,14 @@ function Home() {
             <div className="absolute top-[40px] left-[796px] w-10 h-10 bg-[#CAD3B8] rounded-full z-10"></div>
           </div>
         </div>
+
+        <div className="flex flex-row items-center justify-between p-20">
+            <p className='font-semibold text-4xl'>Browse by catagory</p>
+            <div className="flex flex-row gap-8">
+              <button className='bg-secondary text-white p-2 rounded-l-full'><FaAngleLeft/></button>
+              <button className="bg-secondary text-white p-2 rounded-r-full"><FaAngleRight/></button>
+            </div>
+        </div>
         
     </div>
   )
