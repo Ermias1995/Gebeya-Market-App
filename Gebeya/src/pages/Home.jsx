@@ -1,9 +1,9 @@
 import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight } from "react-icons/fa6";
-import { FaChevronRight } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
 import Ellipse_5 from '../assets/Ellipse_5.png';
 import Ellipse_3 from '../assets/Ellipse_3.png';
 import Ellipse_4 from '../assets/Ellipse_4.png';
+import summer_bg from '../assets/summer_bg.png';
 import { Latest_collections } from "../data";
 import { catagory_buttons } from "../data";
 import { catagory_items } from "../data";
@@ -33,7 +33,7 @@ function Home() {
             </div>  
           </div>
         </div>
-        {/* <div id='space' className="h-24 w-full"></div> */}
+  
         <div id='Second_section' className="">
           <div className="flex flex-row items-center justify-between p-20">
             <p className='font-semibold text-4xl'>Latest Collections</p>
@@ -106,10 +106,18 @@ function Home() {
               <button className="bg-primary text-white px-4 py-2 rounded-lg flex flex-row items-center justify-center">See more<FaAnglesRight/></button>
             </div>
           </div>
-
-          
-          
         </div>
+
+        <div className="relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[502px] justify-evenly" style={{ backgroundImage: `url(${summer_bg})` }}>
+          <div className="flex flex-col w-2/4 px-10 py-10 gap-10">
+            <h1 className="text-[#9847EF] font-semibold text-[40px]">Our Curated Summer Collection</h1>
+            <p className="text-[#9847EF] text-2xl">Explore our curated summer collection featuring trending styles,
+               vibrant colors and lightweight fabrics perfect for long days and nights.
+            </p>
+            <button className="bg-secondary text-white p-10 font-medium w-60 h-12 rounded-lg flex items-center justify-center">Explore Now</button>
+          </div>
+        </div>
+        
     </div>
   )
 }
