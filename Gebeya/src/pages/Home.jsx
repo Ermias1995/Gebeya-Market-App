@@ -7,6 +7,7 @@ import summer_bg from '../assets/summer_bg.png';
 import { Latest_collections } from "../data";
 import { catagory_buttons } from "../data";
 import { catagory_items } from "../data";
+import { browse_category } from "../data";
 
 function Home() {
   return (
@@ -128,12 +129,30 @@ function Home() {
         </div>
 
         <div className="flex flex-row items-center justify-between p-20">
-            <p className='font-semibold text-4xl'>Browse by catagory</p>
+            <p className='font-semibold text-4xl'>Browse by category</p>
             <div className="flex flex-row gap-8">
               <button className='bg-secondary text-white p-2 rounded-l-full'><FaAngleLeft/></button>
               <button className="bg-secondary text-white p-2 rounded-r-full"><FaAngleRight/></button>
             </div>
         </div>
+
+        <div id="Browse by category" className="grid grid-cols-4 px-20">
+          {browse_category.map((item)=>{
+            const {id, name, number, image} = item;
+            return(
+              <div key={id} className="flex flex-col items-center justify-center gap-6">
+                <div className="bg-[#F2F2F2] min-h-[300px] rounded-2xl p-5">
+                  <img src={image} alt={name}/>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h1 className="font-semibold text-2xl">{name}</h1>
+                  <p className="text-[#808080] text-xl">Over {number} categories in stock</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
         
     </div>
   )
