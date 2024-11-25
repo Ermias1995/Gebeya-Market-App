@@ -14,8 +14,8 @@ function Home() {
     <div className="box-border">
         <div id='First_section' className="grid grid-cols-3 bg-primary max-w-[1512px] selection:w-full h-[48.063rem]">
           <div className="flex flex-col items-center justify-around">
-            <h1 className="font-normal text-[7.2rem] text-white font-alfa-slab">Gebeya</h1>
-            <div className="flex items-center justify-center w-[16.25rem] h-[16.25rem] rounded-full">
+            <h1 className="text-6xl md:text-[7.2rem] text-white font-alfa-slab">Gebeya</h1>
+            <div className="md:flex hidden items-center justify-center w-[120px] h-[120px] md:w-[16.25rem] md:h-[16.25rem] rounded-full">
               <img src={Ellipse_5} alt="Ellipse_5" />
             </div>
           </div>
@@ -26,13 +26,16 @@ function Home() {
             <button className='w-[21rem] h-[4.125rem] bg-secondary text-[#222222] rounded-lg'>Explore Now</button>
           </div>
           <div className="flex flex-col items-center justify-around">
-            <p className='text-white text-xl '>Discover a world of convenience with our user-friendly platform, 
+            <p className='text-white text-xl hidden md:block'>Discover a world of convenience with our user-friendly platform, 
               curaated collections, and exceptional customer service</p>
-            <h1 className='font-normal font-alfa-slab text-[7.2rem] text-white'>Shop</h1>
-            <div className="flex items-center justify-center w-[13.938rem] h-[13.938rem] rounded-full">
+            <h1 className='text-6xl font-alfa-slab md:text-[7.2rem] text-white'>Shop</h1>
+            <div className="md:flex hidden items-center justify-center w-[13.938rem] h-[13.938rem] rounded-full">
               <img src={Ellipse_4} alt="Ellipse_4"/>
             </div>  
           </div>
+
+
+
         </div>
   
         <div id='Second_section' className="">
