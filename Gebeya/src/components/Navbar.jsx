@@ -13,7 +13,7 @@ function Navbar() {
     <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
 
-      <div className="relative group" onMouseEnter={() => setIsOpen(true)}
+      <div className="relative md:block hidden group" onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}>
         <button className="flex items-center hover:font-semibold hover:cursor-pointer">
           {isOpen ? <><FaUser/> Register/Sign In<RiArrowUpSLine/></> : <><FaUser/> Register/Sign In<RiArrowDownSLine/></>}
@@ -25,15 +25,14 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="flex items-center space-x-3"></div>
-        <div className="flex items-center space-x-3">
+        <div className="hidden md:flex items-center space-x-3">
             <NavLink to='/' className="hover:font-semibold">Home</NavLink>
             <NavLink to='/' className="hover:font-semibold">Men</NavLink>
             <NavLink to='/' className="hover:font-semibold">Women</NavLink>
             <NavLink to='/' className="hover:font-semibold">Accessories</NavLink>
         </div>
 
-        <div className="relative group" onMouseEnter={()=>setIsOpen(true)}
+        <div className="relative hidden md:block group" onMouseEnter={()=>setIsOpen(true)}
                   onMouseLeave={()=>setIsOpen(false)}>
           <NavLink to='/' className='flex flex-row items-center hover:font-semibold'>
             {isOpen ? <>More<RiArrowUpSLine/></> : <>More<RiArrowDownSLine/></>}
