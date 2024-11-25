@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import {FaUser} from 'react-icons/fa';
 import { FaBagShopping } from "react-icons/fa6";
-import {RiArrowDownSLine} from 'react-icons/ri';
+import {RiArrowDownSLine,RiArrowUpSLine} from 'react-icons/ri';
 import { IoSearch } from "react-icons/io5";
 import {NavLink} from 'react-router-dom'
 import Logo from '../assets/Logo.png';
 import Flag from '../assets/Flag.png';
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
@@ -16,8 +18,10 @@ function Navbar() {
       </div> */}
 
       <div className="relative group">
-        <button className="flex items-center hover:font-semibold hover:cursor-pointer">
-          <FaUser/> Register/Sign In<RiArrowDownSLine/>
+        <button onMouseEnter={() => setIsOpen(true)}
+                onMouseLeave={() => setIsOpen(false)}
+                className="flex items-center hover:font-semibold hover:cursor-pointer">
+          {isOpen ? <><FaUser/> Register/Sign In<RiArrowUpSLine/></> : <><FaUser/> Register/Sign In<RiArrowDownSLine/></>}
         </button>
         <div className="absolute items-center justify-center mt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
             <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Register</a>
