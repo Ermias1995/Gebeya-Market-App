@@ -15,11 +15,11 @@ function Navbar() {
       </div>
       <div className="flex items-center space-x-3"></div>
         <div className="flex items-center space-x-3">
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/'>Men</NavLink>
-            <NavLink to='/'>Women</NavLink>
-            <NavLink to='/'>Accessories</NavLink>
-            <NavLink to='/' className='flex flex-row items-center'>More<RiArrowDownSLine/></NavLink>
+            <NavLink to='/' className="hover:font-semibold">Home</NavLink>
+            <NavLink to='/' className="hover:font-semibold">Men</NavLink>
+            <NavLink to='/' className="hover:font-semibold">Women</NavLink>
+            <NavLink to='/' className="hover:font-semibold">Accessories</NavLink>
+            <NavLink to='/' className='flex flex-row items-center hover:font-semibold'>More<RiArrowDownSLine/></NavLink>
         </div>
         <div className="flex items-center">
           <IoSearch className="absolute transform translate-x-1"/>
