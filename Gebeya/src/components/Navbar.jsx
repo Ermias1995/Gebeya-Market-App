@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
-      <div className="flex items-center">
+      <div className="flex items-center hover:font-semibold hover:cursor-pointer">
         <FaUser/> Register/Sign In<RiArrowDownSLine/>
       </div>
       <div className="flex items-center space-x-3"></div>
@@ -28,7 +28,7 @@ function Navbar() {
         </div>
         <div className="flex items-center">
           <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
-          <p className='flex items-center hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
+          <p className='flex items-center hover:font-semibold hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
         </div>
         <div className="relative flex items-center justify-center w-11 h-11 bg-primary text-white rounded-full">
           <p className='absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full'>2</p>
