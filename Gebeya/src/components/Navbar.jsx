@@ -13,10 +13,6 @@ function Navbar() {
     <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
 
-      {/* <div className="flex items-center hover:font-semibold hover:cursor-pointer">
-        <FaUser/> Register/Sign In<RiArrowDownSLine/>
-      </div> */}
-
       <div className="relative group">
         <button onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
@@ -36,8 +32,17 @@ function Navbar() {
             <NavLink to='/' className="hover:font-semibold">Men</NavLink>
             <NavLink to='/' className="hover:font-semibold">Women</NavLink>
             <NavLink to='/' className="hover:font-semibold">Accessories</NavLink>
-            <NavLink to='/' className='flex flex-row items-center hover:font-semibold'>More<RiArrowDownSLine/></NavLink>
         </div>
+
+        <div className="relative group">
+          <NavLink to='/' 
+                  onMouseEnter={()=>setIsOpen(true)}
+                  onMouseLeave={()=>setIsOpen(false)}   
+                  className='flex flex-row items-center hover:font-semibold'>
+            {isOpen ? <>More<RiArrowUpSLine/></> : <>More<RiArrowDownSLine/></>}
+          </NavLink>
+        </div>
+
         <div className="flex items-center">
           <IoSearch className="absolute transform translate-x-1"/>
           <input type="text" placeholder={`Search`} className="h-10 p-2 pl-6 border rounded-l-2xl"/>
