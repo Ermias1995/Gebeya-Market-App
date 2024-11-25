@@ -19,10 +19,10 @@ function Navbar() {
         <button className="flex items-center hover:font-semibold hover:cursor-pointer">
           <FaUser/> Register/Sign In<RiArrowDownSLine/>
         </button>
-        <div className="absolute items-center justify-center p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
-            <a href="#" className="block m-0 px-4 py-2 hover:font-semibold">Register</a>
+        <div className="absolute items-center justify-center mt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Register</a>
             <hr></hr>
-            <a href="#" className="block m-0 items-center px-4 py-2 hover:font-semibold">Sign In</a>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Sign In</a>
         </div>
       </div>
 
