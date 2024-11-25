@@ -13,13 +13,12 @@ function Navbar() {
     <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
 
-      <div className="relative group">
-        <button onMouseEnter={() => setIsOpen(true)}
-                onMouseLeave={() => setIsOpen(false)}
-                className="flex items-center hover:font-semibold hover:cursor-pointer">
+      <div className="relative group" onMouseEnter={() => setIsOpen(true)}
+                onMouseLeave={() => setIsOpen(false)}>
+        <button className="flex items-center hover:font-semibold hover:cursor-pointer">
           {isOpen ? <><FaUser/> Register/Sign In<RiArrowUpSLine/></> : <><FaUser/> Register/Sign In<RiArrowDownSLine/></>}
         </button>
-        <div className="absolute items-center justify-center mt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
+        <div className="absolute items-center justify-center pt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
             <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Register</a>
             <hr></hr>
             <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Sign In</a>
@@ -34,13 +33,26 @@ function Navbar() {
             <NavLink to='/' className="hover:font-semibold">Accessories</NavLink>
         </div>
 
-        <div className="relative group">
-          <NavLink to='/' 
-                  onMouseEnter={()=>setIsOpen(true)}
-                  onMouseLeave={()=>setIsOpen(false)}   
-                  className='flex flex-row items-center hover:font-semibold'>
+        <div className="relative group" onMouseEnter={()=>setIsOpen(true)}
+                  onMouseLeave={()=>setIsOpen(false)}>
+          <NavLink to='/' className='flex flex-row items-center hover:font-semibold'>
             {isOpen ? <>More<RiArrowUpSLine/></> : <>More<RiArrowDownSLine/></>}
           </NavLink>
+          <div className="absolute items-center justify-center pt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Perfumes</a>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Jewelries</a>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Gym wears</a>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Vintage wears</a>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Sport wears</a>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Pyjamas</a>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Slippers</a>
+          </div>
         </div>
 
         <div className="flex items-center">
@@ -59,4 +71,4 @@ function Navbar() {
     </div>
   )
 }
-export default Navbar
+export default Navbar;
