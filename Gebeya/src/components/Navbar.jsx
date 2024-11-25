@@ -10,9 +10,22 @@ function Navbar() {
   return (
     <div className="flex items-center justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <img src={Logo} alt="Logo" className="h-10"/>
-      <div className="flex items-center hover:font-semibold hover:cursor-pointer">
+
+      {/* <div className="flex items-center hover:font-semibold hover:cursor-pointer">
         <FaUser/> Register/Sign In<RiArrowDownSLine/>
+      </div> */}
+
+      <div className="relative group">
+        <button className="flex items-center hover:font-semibold hover:cursor-pointer">
+          <FaUser/> Register/Sign In<RiArrowDownSLine/>
+        </button>
+        <div className="absolute items-center justify-center p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
+            <a href="#" className="block m-0 px-4 py-2 hover:font-semibold">Register</a>
+            <hr></hr>
+            <a href="#" className="block m-0 items-center px-4 py-2 hover:font-semibold">Sign In</a>
+        </div>
       </div>
+
       <div className="flex items-center space-x-3"></div>
         <div className="flex items-center space-x-3">
             <NavLink to='/' className="hover:font-semibold">Home</NavLink>
@@ -33,7 +46,7 @@ function Navbar() {
         <div className="relative flex items-center justify-center w-11 h-11 bg-primary text-white rounded-full">
           <p className='absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full'>2</p>
           <FaBagShopping className='text-white'/>
-        </div>
+    </div>
     </div>
   )
 }
