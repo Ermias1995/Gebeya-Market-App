@@ -5,7 +5,7 @@ import { BiTransfer } from "react-icons/bi";
 function Checkout() {
   return (
     <div className='flex flex-col gap-10'>
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-col md:flex-row justify-center gap-4">
         <div className=" flex flex-col p-4 border border-[#808080] rounded-lg">
           <h1 className='font-semibold text-2xl my-4'>Shipping Address</h1>
           <h1 className="font-semibold text-lg">Name</h1>
@@ -66,9 +66,9 @@ function Checkout() {
           <button className='w-[350px] h-[53px] bg-secondary text-white rounded-lg'>Place Order</button>
         </div>
       </div>
-      <div className="flex flex-col justify-start border border-[#808080] rounded-lg p-4 w-2/3 ml-44">
+      <div className="flex flex-col justify-start border border-[#808080] rounded-lg p-4 w-4/5 md:ml-44">
         <h1 className="font-semibold text-2xl my-4">Payment Method</h1>
-        <div className="flex justify-center items-center gap-4 w-[893px] mt-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:w-[893px] mt-4">
           <div className="flex flex-col items-center justify-center hover:bg-secondary hover:text-white text-[#808080] hover:cursor-pointer w-[266px] h-[136px] border border-[#808080] rounded-lg">
             <CiCreditCard1 className=''/>
             <p>Card</p>
@@ -86,7 +86,7 @@ function Checkout() {
         <input type="text" placeholder="First & Last Name" className="border border-[#C1C1C1] rounded-lg h-14 p-2 w-full"/>
         <h1 className="font-semibold text-lg mt-4">Card number</h1>
         <input type="text" placeholder="0000 0000 0000 0000" className="border border-[#C1C1C1] rounded-lg h-14 p-2 w-full"/>
-        <div className=" flex flex-row items-center gap-4">
+        <div className=" flex flex-col md:flex-row items-center md:gap-4">
           <div className="">
             <h1 className="font-semibold text-lg mt-3">Expiry</h1>
             <input type="text" placeholder="MM" className="border border-[#C1C1C1] rounded-lg h-14 p-2"/>
