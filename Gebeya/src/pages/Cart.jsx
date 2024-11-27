@@ -66,8 +66,8 @@ function Cart() {
                     <div className="bg-[#242425] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
                   </div>
                   <div id='buttons' className="flex flex-row items-center justify-between gap-2">
-                    <button className="border border-black p-4 text-2xl rounded-lg flex items-center" onClick={() => navigate('/checkout')}><FaBagShopping/>Add to Cart</button>
-                    <button className=" bg-secondary p-4 text-2xl text-white rounded-lg" onClick={() => navigate('/checkout')}>Buy Now </button>
+                    <button className="border border-black hover:bg-slate-600 hover:text-white p-4 text-2xl rounded-lg flex items-center" onClick={() => navigate('/checkout')}><FaBagShopping/>Add to Cart</button>
+                    <button className=" bg-secondary hover:bg-opacity-50 p-4 text-2xl text-white rounded-lg" onClick={() => navigate('/checkout')}>Buy Now </button>
                   </div>
                   <p className="text-[#006200] mt-4">Pickup & Pay on collection available</p>
                 </div>
@@ -127,7 +127,7 @@ function Cart() {
                   <div className="flex flex-col gap-4 border-[#808080]">
                     <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl min-h-64">
                       <img className="m-auto" src={image} alt={name} />
-                      <button className='absolute top-5 left-5 bg-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
+                      <button className='absolute top-5 left-5 bg-white hover:bg-black hover:text-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
                       <button className='bg-white p-2 w-[67px] h-[34px] items-center 
                       justify-center border rounded-l-full rounded-r-full text-xs
                       absolute top-5 right-5'>In Stock</button>
@@ -148,7 +148,7 @@ function Cart() {
                     </div>
                     <div className="flex flex-col justify-between">
                       <div className=""></div>
-                      <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
+                      <button className="bg-secondary hover:bg-opacity-50 text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
                     </div>
                   </div>
 

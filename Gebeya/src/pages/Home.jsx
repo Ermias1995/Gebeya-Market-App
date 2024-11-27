@@ -27,7 +27,7 @@ function Home() {
             </div>
             <p className='text-white text-xl md:hidden'>Discover a world of convenience with our user-friendly platform, 
               curaated collections, and exceptional customer service</p>
-            <button className='w-[21rem] h-[4.125rem] bg-secondary text-white md:text-[#222222] rounded-lg'>Explore Now</button>
+            <button className='w-[21rem] h-[4.125rem] bg-secondary md:hover:bg-opacity-50 md:hover:text-white  text-white md:text-[#222222] rounded-lg'>Explore Now</button>
           </div>
           <div className="flex flex-col items-center justify-around">
             <p className='text-white text-xl hidden md:block'>Discover a world of convenience with our user-friendly platform, 
@@ -166,7 +166,7 @@ function Home() {
             })}
           </div>
           <div id='see more button' className="flex justify-center items-center mt-6">
-            <button className="bg-primary text-white px-4 py-2 mr-5 rounded-lg flex flex-row items-center justify-center">See more<FaAnglesRight/></button>
+            <button className="bg-primary text-white px-4 py-2 mr-5 rounded-lg flex flex-row items-center hover:bg-opacity-50 justify-center">See more<FaAnglesRight/></button>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ function Home() {
             <p className="text-[#9847EF] text-xl">Explore our curated summer collection featuring trending styles,
                vibrant colors and lightweight fabrics perfect for long days and nights.
             </p>
-            <button className="absolute top-[280px] left-[50px] bg-secondary text-white p-3 font-medium w-60 h-10 rounded-lg flex items-center justify-center">Explore Now</button>
+            <button className="absolute top-[280px] left-[50px] bg-secondary text-white p-3 font-medium w-60 h-10 rounded-lg flex items-center justify-center hover:opacity-50">Explore Now</button>
             <div className="absolute top-[54px] left-[249px] w-4 h-4 bg-primary rounded-full z-10"></div>
             <div className="absolute top-[53px] left-[250px] w-4 h-4 bg-primary rounded-full z-10"></div>
             <div className="absolute top-[147px] left-[151px] w-3 h-3 bg-primary bg-opacity-50 rounded-full z-10"></div>
@@ -210,8 +210,8 @@ function Home() {
         <div className="flex flex-row items-center justify-between p-20">
             <p className='font-semibold text-4xl'>Browse by category</p>
             <div className="hidden md:flex flex-row gap-8">
-              <button className='bg-secondary text-white p-2 rounded-l-full'><FaAngleLeft/></button>
-              <button className="bg-secondary text-white p-2 rounded-r-full"><FaAngleRight/></button>
+              <button className='bg-secondary hover:bg-opacity-50 text-white p-2 rounded-l-full'><FaAngleLeft/></button>
+              <button className="bg-secondary hover:bg-opacity-50 text-white p-2 rounded-r-full"><FaAngleRight/></button>
             </div>
         </div>
 
