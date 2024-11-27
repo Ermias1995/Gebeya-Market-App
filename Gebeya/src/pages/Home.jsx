@@ -16,13 +16,13 @@ function Home() {
     <div className="box-border">
         <div id='First_section' className="grid grid-cols-3 bg-primary max-w-[1512px] selection:w-full h-[48.063rem]">
           <div className="flex flex-col md:items-center items-start justify-start pt-20 md:justify-around">
-            <h1 className="text-6xl md:text-[7.2rem] font-semibold text-white font-alfa-slab">Gebeya</h1>
+            <h1 className="text-5xl md:text-[7.2rem] font-semibold text-white font-alfa-slab">Gebeya</h1>
             <div className="md:flex hidden items-center justify-center w-[120px] h-[120px] md:w-[16.25rem] md:h-[16.25rem] rounded-full">
               <img src={Ellipse_5} alt="Ellipse_5" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-around">
-            <div className="flex items-center justify-center w-56 h-56 md:w-[16.25rem] md:h-[16.25rem] rounded-full">
+            <div className="flex items-center justify-center w-52 h-52 md:w-[16.25rem] md:h-[16.25rem] rounded-full">
               <img src={Ellipse_3} alt="Ellipse_3"/>
             </div>
             <p className='text-white text-xl md:hidden'>Discover a world of convenience with our user-friendly platform, 
@@ -32,7 +32,7 @@ function Home() {
           <div className="flex flex-col items-center justify-around">
             <p className='text-white text-xl hidden md:block'>Discover a world of convenience with our user-friendly platform, 
               curaated collections, and exceptional customer service</p>
-            <h1 className='text-6xl font-alfa-slab md:text-[7.2rem] text-white'>Shop</h1>
+            <h1 className='text-5xl font-alfa-slab md:text-[7.2rem] text-white'>Shop</h1>
             <div className="md:flex hidden items-center justify-center w-[13.938rem] h-[13.938rem] rounded-full">
               <img src={Ellipse_4} alt="Ellipse_4"/>
             </div>  
@@ -190,20 +190,20 @@ function Home() {
         </div>
 
         {/* Responsive Summer Banner */}
-        <div id='summer banner' className="md:hidden relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[300px] justify-evenly">
+        <div id='summer banner' className="md:hidden relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] max-w-96 h-[350px] justify-evenly">
           <div className="flex flex-col px-10 py-6 gap-4">
             <h1 className="text-[#9847EF] font-semibold text-2xl w-2/3">Our Curated Summer Collection</h1>
             <p className="text-[#9847EF] text-xl">Explore our curated summer collection featuring trending styles,
                vibrant colors and lightweight fabrics perfect for long days and nights.
             </p>
-            <button className="absolute top-[250px] left-[50px] bg-secondary text-white p-3 font-medium w-60 h-10 rounded-lg flex items-center justify-center">Explore Now</button>
+            <button className="absolute top-[280px] left-[50px] bg-secondary text-white p-3 font-medium w-60 h-10 rounded-lg flex items-center justify-center">Explore Now</button>
             <div className="absolute top-[54px] left-[249px] w-4 h-4 bg-primary rounded-full z-10"></div>
-            <div className="absolute top-[53px] left-[349px] w-4 h-4 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[53px] left-[250px] w-4 h-4 bg-primary rounded-full z-10"></div>
             <div className="absolute top-[147px] left-[151px] w-3 h-3 bg-primary bg-opacity-50 rounded-full z-10"></div>
             <div className="absolute top-[173px] left-[186px] w-4 h-4 bg-primary rounded-full z-10"></div>
-            <div className="absolute top-[156px] left-[257px] w-6 h-6 bg-primary bg-opacity-50  rounded-full z-10"></div>
-            <div className="absolute top-[210px] left-[311px] w-10 h-10 bg-primary rounded-full z-10"></div>
-            <div className="absolute top-[15px] left-[307px] w-4 h-4 bg-[#CAD3B8] rounded-full z-10"></div>
+            <div className="absolute top-[156px] left-[200px] w-6 h-6 bg-primary bg-opacity-50  rounded-full z-10"></div>
+            <div className="absolute top-[210px] left-[250px] w-10 h-10 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[15px] left-[250px] w-4 h-4 bg-[#CAD3B8] rounded-full z-10"></div>
           </div>
         </div>
 
