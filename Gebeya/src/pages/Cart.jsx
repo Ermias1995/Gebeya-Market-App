@@ -98,8 +98,13 @@ function Cart() {
             );
           })}
         </div>
-        <div id='delivery and return' className="flex flex-col">
-          <h1>Delivery & Returns</h1>
+        <div id='delivery and return' className="flex flex-col p-4">
+          <div className="Filtering buttons flex gap-2">
+            <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Overview</button>
+            <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Description</button>
+            <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Warranty</button>
+            <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Reviews</button>
+          </div>
         </div>
       </div>
       <div className="Overview and similar items"></div>
