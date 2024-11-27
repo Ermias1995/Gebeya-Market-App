@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {FaUser} from 'react-icons/fa';
-import { FaBagShopping } from "react-icons/fa6";
+import { FaBagShopping,FaAngleRight } from "react-icons/fa6";
 import {RiArrowDownSLine,RiArrowUpSLine} from 'react-icons/ri';
 import { RxCross2 } from "react-icons/rx";
 import { VscThreeBars } from "react-icons/vsc";
@@ -21,20 +21,22 @@ function Navbar() {
       {/* Responsive Nabar */}
       {isMoreOpen && (
         <div className=" relative group">
-          <div className="absolute items-center justify-center pt-4 p-5 w-[194px] left-0  bg-white group-hover:block border border-[#C1C1C1]">
+          <div className="absolute items-center justify-center w-[207px] left-0  bg-white group-hover:block border border-[#C1C1C1]">
             <div className="flex flex-row items-center justify-center">
               <img src={Logo} alt="Logo" className="h-10"/>
               <button onClick={()=>setIsMoreOpen(false)} className='flex text-xl items-center justify-center'><RxCross2 /></button>
             </div>
-            <p>Register/Sign In<RiArrowUpSLine/></p>
-            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Our Catagories</a>
-            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Men</a>
-            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Women</a>
-            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Kids</a>
-            <a href="#" className="block ml-5 px-4 py-2 hover:font-semibold">Accessories</a>
-            <p>More<RiArrowDownSLine/></p>
             <hr></hr>
-            <div className="hidden md:flex items-center">
+              <p className='flex justify-center py-2'>Register/Sign In<FaAngleRight/></p>
+            <hr></hr>
+            <a href="#" className="block ml-5 px-2 py-2 hover:font-semibold">Our Catagories</a>
+            <a href="#" className="block ml-5 px-2 py-2 hover:font-semibold">Men</a>
+            <a href="#" className="block ml-5 px-2 py-2 hover:font-semibold">Women</a>
+            <a href="#" className="block ml-5 px-2 py-2 hover:font-semibold">Kids</a>
+            <a href="#" className="block ml-5 px-2 py-2 hover:font-semibold">Accessories</a>
+            <p className='flex justify-center py-2'>More<RiArrowDownSLine/></p>
+            <hr></hr>
+            <div className="flex items-center">
               <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
               <p className='flex items-center hover:font-semibold hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
             </div>
