@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import SharedLayout from "./pages/SharedLayout";
+import Error from "./pages/Error";
+import Under from "./pages/Under";
 
 function App() {
 
@@ -13,6 +15,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="cart" element={<Cart/>}/>
         <Route path="checkout" element={<Checkout/>}/>
+        <Route path="under" element={<Under/>}/>
         <Route path="*" element={<Error/>}/>
       </Route>
     </Routes>

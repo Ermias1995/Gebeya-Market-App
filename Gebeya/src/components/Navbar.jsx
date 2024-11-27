@@ -60,9 +60,9 @@ function Navbar() {
 
         <div className="hidden md:flex items-center space-x-3">
             <NavLink to='/' className="hover:font-semibold">Home</NavLink>
-            <NavLink to='/cart' className="hover:font-semibold">Men</NavLink>
-            <NavLink to='/women' className="hover:font-semibold">Women</NavLink>
-            <NavLink to='/' className="hover:font-semibold">Accessories</NavLink>
+            <NavLink to='/error' className="hover:font-semibold">Men</NavLink>
+            <NavLink to='/error' className="hover:font-semibold">Women</NavLink>
+            <NavLink to='/error' className="hover:font-semibold">Accessories</NavLink>
         </div>
 
         <div className="relative hidden md:block group" onMouseEnter={()=>setIsOpen(true)}

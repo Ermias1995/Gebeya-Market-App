@@ -14,11 +14,12 @@ function Cart() {
   return (
     <div>
       <div className="">
-        <div id='product' className="">
+
+        <div id='product' className="flex cols ">
           {cart.map((item)=>{
             const {id, name, image,image_1, image_2, image_3, price, brand, category, rating} = item;
             return(
-              <div key={id} id='Images and Discreption' className="flex justify-center p-4 gap-4">
+              <div key={id} id='Images and Discreption' className="flex flex-col md:flex-row  justify-center p-4 gap-4">
                 <div className="flex border border-[#808080] rounded-2xl p-4">
                 <div id='images' className="flex flex-col items-center justify-center w-[321px] gap-2">
                   <div id='main image' className="bg-[#F2F2F2] border rounded-2xl">
@@ -65,14 +66,13 @@ function Cart() {
                     <div className="bg-[#242425] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
                   </div>
                   <div id='buttons' className="flex flex-row items-center justify-between gap-2">
-                    <button className="border border-black p-4 text-2xl rounded-lg flex items-center"><FaBagShopping/>Add to Cart</button>
-                    {/* <button className="bg-secondary p-4 text-2xl text-white rounded-lg">Buy Now</button> */}
+                    <button className="border border-black p-4 text-2xl rounded-lg flex items-center" onClick={() => navigate('/checkout')}><FaBagShopping/>Add to Cart</button>
                     <button className=" bg-secondary p-4 text-2xl text-white rounded-lg" onClick={() => navigate('/checkout')}>Buy Now </button>
                   </div>
                   <p className="text-[#006200] mt-4">Pickup & Pay on collection available</p>
                 </div>
                 </div>
-                <div className="flex flex-col border border-[#808080] rounded-2xl p-4 w-1/3">
+                <div className="flex flex-col border border-[#808080] rounded-2xl p-4 w-4/5 md:w-1/3">
                   <p>Delivery & Returns</p>
                   <hr className="w-full"/>
                   <h1>Location</h1>
@@ -102,6 +102,7 @@ function Cart() {
             );
           })}
         </div>
+
         <div id='delivery and return' className="flex flex-col p-4">
           <div className="Filtering buttons flex gap-2">
             <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Overview</button>
@@ -117,11 +118,12 @@ function Cart() {
           </ul>
           <hr className="w-full my-3"/>
           <p className="font-semibold text-2xl">Similar items you may like</p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex md:flex-row flex-col items-center gap-4 mt-4">
           {Latest_collections.filter(item => item.id === 4 || item.id === 5).map((item)=>{
               const { id, name, image, brand, rating, price, category } = item;
               return(
                 <div key={id} className="min-w-[435px] min-h-[497px] border-2  p-4 rounded-2xl">
+
                   <div className="flex flex-col gap-4 border-[#808080]">
                     <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl min-h-64">
                       <img className="m-auto" src={image} alt={name} />
@@ -135,6 +137,7 @@ function Cart() {
                       <h1 className="text-[#808080] flex flex-row items-center"><IoStar className="text-secondary"/>{rating} rating</h1>
                     </div>
                   </div>
+                  
                   <div id='brand_and_price' className="flex flex-row justify-between">
                     <div className="flex flex-col justify-between gap-10">
                       <div className="flex flex-col gap-0">
@@ -148,13 +151,16 @@ function Cart() {
                       <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
                     </div>
                   </div>
+
                 </div>
               );
             })}
           </div>
         </div>
+
       </div>
     </div>
+    
   )
 }
 export default Cart
