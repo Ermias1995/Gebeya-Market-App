@@ -201,13 +201,13 @@ function Home() {
 
         <div className="flex flex-row items-center justify-between p-20">
             <p className='font-semibold text-4xl'>Browse by category</p>
-            <div className="flex flex-row gap-8">
+            <div className="hidden md:flex flex-row gap-8">
               <button className='bg-secondary text-white p-2 rounded-l-full'><FaAngleLeft/></button>
               <button className="bg-secondary text-white p-2 rounded-r-full"><FaAngleRight/></button>
             </div>
         </div>
 
-        <div id="Browse by category" className="grid grid-cols-2 md:grid-cols-4 px-20">
+        <div id="Browse by category" className="hidden md:grid grid-cols-2 md:grid-cols-4 px-20">
           {browse_category.map((item)=>{
             const {id, name, number, image} = item;
             return(
@@ -222,6 +222,26 @@ function Home() {
               </div>
             );
           })}
+        </div>
+
+        {/* Responsive Browse Category */}
+        <div className="overflow-x-auto py-4 md:hidden">
+          <div id="Browse by category" className="flex space-x-4 pl-4 pr-4">
+            {browse_category.map((item)=>{
+              const {id, name, number, image} = item;
+              return(
+                <div key={id} className="flex-none w-[360px] max-h-[497px] border-2 p-4 rounded-2xl">
+                  <div className="bg-[#F2F2F2] min-h-[300px] rounded-2xl p-5">
+                    <img src={image} alt={name}/>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <h1 className="font-semibold text-2xl">{name}</h1>
+                    <p className="text-[#808080] text-xl">Over {number} categories in stock</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
         
     </div>
