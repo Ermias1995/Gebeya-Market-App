@@ -105,6 +105,12 @@ function Cart() {
             <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Warranty</button>
             <button className="flex items-center justify-center text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[180px] h-11 hover:bg-secondary hover:text-white hover:border-none">Reviews</button>
           </div>
+          <ul class="list-disc pl-5 space-y-2 text-[#808080] mt-3">
+            <li>Available in a wide range of colors, patterns, and patterns and themes to appeal to kids.</li>
+            <li>Rubber outsoles with good traction to prevent slips and falls.</li>
+            <li>Built-in arch support to help maintain healthy foot development.</li>
+            <li>Soft insoles and adequate padding to support growing feet.</li>
+          </ul>
         </div>
       </div>
       <div className="Overview and similar items"></div>
