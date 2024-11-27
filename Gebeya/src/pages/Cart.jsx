@@ -1,7 +1,11 @@
 import { cart } from "../data"
-import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight } from "react-icons/fa6";
-import { FaInstagram,FaWhatsapp,FaXTwitter } from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight, FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa";
+import { IoStar } from "react-icons/io5";
+import { FaInstagram,FaWhatsapp,FaXTwitter,FaBagShopping } from "react-icons/fa6";
+import { useState } from "react";
 function Cart() {
+  const [number, setNumber] = useState(0);
   return (
     <div>
       <div className="">
@@ -31,11 +35,33 @@ function Cart() {
                   <h1 className="text-4xl font-semibold">{name}</h1>
                   <p className="text-lg font-medium">Brand: {brand}</p>
                   <hr className="my-2"/>
-                  <p className=""><span className="font-medium text-2xl">${price}</span> <span className="line-through text-[#808080] text-base">$300</span> <span className="">-50%</span></p>
-                  <p>50 units left</p>
-                  <p>+ shipping fee may vary on location</p>
-                  <p>{rating} rating</p>
+                  <p className=""><span className="font-medium text-2xl">${price}</span> <span className="line-through text-[#808080] text-base">$300</span> <span className="bg-[#006200] bg-opacity-10 text-[#006200] text-base rounded-md">-50%</span></p>
+                  <p className="text-[#006200] text-opacity-70 text-sm">50 units left</p>
+                  <p className="text-[#808080] text-sm">+ shipping fee may vary on location</p>
+                  <h1 className="text-[#808080] flex flex-row items-center"><IoStar className="text-secondary"/>{rating} rating</h1>
                   <hr />
+                  <div id='quantity' className="flex flex-row items-center justify-between">
+                    <h1 className="text-base pt-2">Quantity:</h1>
+                    <div id='quantity' className="flex flex-row items-center justify-between rounded border border-black mt-4">
+                      <button className="bg-secondary p-2 text-2xl text-white" onClick={()=>{setNumber(number - 1)}}><FaMinus/></button>
+                      <p className="text-2xl px-4">{number}</p>
+                      <button className="bg-secondary p-2 text-2xl text-white" onClick={()=>{setNumber(number + 1)}}><FaPlus/></button>
+                    </div>
+                  </div>
+                  <h1 className="text-base pt-2 mt-4">Size: <span className="px-3 py-2 border border-[#C1C1C1] rounded-lg">20</span> <span className="px-3 py-2 border border-[#C1C1C1] rounded-lg"> 25</span> 
+                  <span className="px-3 py-2 border border-[#C1C1C1] rounded-lg"> 31</span> <span className="px-3 py-2 border border-[#C1C1C1] rounded-lg"> 37 </span></h1>
+                  
+                  <div id='color' className="flex flex-row items-center justify-between mt-4">
+                    <h1 className="text-lg pt-2 mt-4 flex items-center justify-center pb-3">Color:</h1>
+                    <div className="bg-[#EBCDD5] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
+                    <div className="bg-[#4444FF] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
+                    <div className="bg-[#FF4646] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
+                    <div className="bg-[#242425] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
+                  </div>
+                  <div id='buttons' className="flex flex-row items-center justify-between gap-2">
+                    <button className="border border-black p-4 text-2xl rounded-lg flex"><FaBagShopping/>Add to Cart</button>
+                    <button className="bg-secondary p-4 text-2xl text-white rounded-lg">Buy Now</button>
+                  </div>
                 </div>
               </div>
             );
