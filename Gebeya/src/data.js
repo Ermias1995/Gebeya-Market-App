@@ -86,9 +86,12 @@ export const browse_category = [
 
 export const cart = [
     {
-        id: 2,
+        id: 1,
         name: "Burbery shine",
         image: Burbery_shine,
+        image_1: burberry_shine_1,
+        image_2: burberry_shine_2,
+        image_3: burberry_shine_3, 
         price: 150,
         brand: "FENDI",
         category: "kids",
