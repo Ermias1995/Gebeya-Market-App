@@ -39,7 +39,7 @@ function Home() {
           </div>
         </div>
   
-        <div id='Second_section' className="">
+         <div id='Second_section' className="">
           <div className="flex flex-row items-center justify-between p-20">
             <p className='font-semibold text-4xl'>Latest Collections</p>
             <div className="hidden md:flex flex-row gap-8">
@@ -77,7 +77,7 @@ function Home() {
                     <div className="flex flex-col justify-between">
                       <div className=""></div>
                       <button 
-                        className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl"
+                        className=" bg-secondary hover:bg-opacity-50 text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl"
                         onClick={() => navigate('/cart')}>Add to cart
                       </button>
                     </div>
@@ -113,8 +113,6 @@ function Home() {
                       </div>
                       <div className="flex flex-col justify-between">
                         <div className=""></div>
-                        <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
-                      
                       <button 
                         className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl"
                         onClick={() => navigate('/cart')}>Add to cart
@@ -194,8 +192,8 @@ function Home() {
         {/* Responsive Summer Banner */}
         <div id='summer banner' className="md:hidden relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[300px] justify-evenly">
           <div className="flex flex-col px-10 py-6 gap-4">
-            <h1 className="text-[#9847EF] font-semibold text-3xl w-2/3">Our Curated Summer Collection</h1>
-            <p className="text-[#9847EF] text-2xl">Explore our curated summer collection featuring trending styles,
+            <h1 className="text-[#9847EF] font-semibold text-2xl w-2/3">Our Curated Summer Collection</h1>
+            <p className="text-[#9847EF] text-xl">Explore our curated summer collection featuring trending styles,
                vibrant colors and lightweight fabrics perfect for long days and nights.
             </p>
             <button className="absolute top-[250px] left-[50px] bg-secondary text-white p-3 font-medium w-60 h-10 rounded-lg flex items-center justify-center">Explore Now</button>

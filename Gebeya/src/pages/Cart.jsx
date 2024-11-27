@@ -7,8 +7,10 @@ import { FaInstagram,FaWhatsapp,FaXTwitter,FaBagShopping } from "react-icons/fa6
 import { MdAssignmentReturn } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 function Cart() {
   const [number, setNumber] = useState(0);
+  const navigate = useNavigate();
   return (
     <div>
       <div className="">
@@ -64,7 +66,8 @@ function Cart() {
                   </div>
                   <div id='buttons' className="flex flex-row items-center justify-between gap-2">
                     <button className="border border-black p-4 text-2xl rounded-lg flex items-center"><FaBagShopping/>Add to Cart</button>
-                    <button className="bg-secondary p-4 text-2xl text-white rounded-lg">Buy Now</button>
+                    {/* <button className="bg-secondary p-4 text-2xl text-white rounded-lg">Buy Now</button> */}
+                    <button className=" bg-secondary p-4 text-2xl text-white rounded-lg" onClick={() => navigate('/checkout')}>Buy Now </button>
                   </div>
                   <p className="text-[#006200] mt-4">Pickup & Pay on collection available</p>
                 </div>
