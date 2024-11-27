@@ -17,6 +17,11 @@ import casual_wear from '../src/assets/casual_wear.png';
 import vintage from '../src/assets/vintage.png';
 import beauty_products from '../src/assets/beauty_products.png';
 import gym_wears from '../src/assets/gym_wears.png';
+import burberry_shine_1 from '../src/assets/burberry_shine_1.png';
+import burberry_shine_2 from '../src/assets/burberry_shine_2.png';
+import burberry_shine_3 from '../src/assets/burberry_shine_3.png';
+import butline_blue from '../src/assets/butline_blue.png';
+import pink_cherry from '../src/assets/pink_cherry.png';
 
 export const Latest_collections = [
     {
@@ -77,4 +82,16 @@ export const browse_category = [
     { id: 2, name: "Vintage", number:31, image:vintage },
     { id: 3, name: "Beauty products", number:24, image:beauty_products },
     { id: 4, name: "Gym wears", number:62, image:gym_wears },
+];
+
+export const cart = [
+    {
+        id: 2,
+        name: "Burbery shine",
+        image: Burbery_shine,
+        price: 150,
+        brand: "FENDI",
+        category: "kids",
+        rating: "1k+"
+    },
 ];
