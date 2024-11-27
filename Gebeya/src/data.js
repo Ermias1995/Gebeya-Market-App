@@ -87,7 +87,7 @@ export const browse_category = [
 export const cart = [
     {
         id: 1,
-        name: "Burbery shine",
+        name: "Burberry shine",
         image: Burbery_shine,
         image_1: burberry_shine_1,
         image_2: burberry_shine_2,

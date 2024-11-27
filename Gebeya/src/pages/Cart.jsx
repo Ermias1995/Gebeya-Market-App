@@ -9,7 +9,7 @@ function Cart() {
           {cart.map((item)=>{
             const {id, name, image,image_1, image_2, image_3, price, brand, category, rating} = item;
             return(
-              <div key={id} id='Images and Discreption' className="">
+              <div key={id} id='Images and Discreption' className="flex justify-start">
                 <div id='images' className="flex flex-col items-center justify-center w-[321px] gap-2">
                   <div id='main image' className="bg-[#F2F2F2] border rounded-2xl">
                     <img src={image} alt={name}/>
@@ -27,8 +27,15 @@ function Cart() {
                     <button className="text-black text-3xl"><FaXTwitter/></button>
                   </div>
                 </div>
-                <div id='Discreption' className="">
-
+                <div id='Discreption' className="flex flex-col">
+                  <h1 className="text-4xl font-semibold">{name}</h1>
+                  <p className="text-lg font-medium">Brand: {brand}</p>
+                  <hr className="my-2"/>
+                  <p className=""><span className="font-medium text-2xl">${price}</span> <span className="line-through text-[#808080] text-base">$300</span> <span>-50%</span></p>
+                  <p>50 units left</p>
+                  <p>+ shipping fee may vary on location</p>
+                  <p>{rating} rating</p>
+                  <hr />
                 </div>
               </div>
             );
