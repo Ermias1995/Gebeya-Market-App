@@ -3,6 +3,7 @@ import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight, FaPlus } from "reac
 import { FaMinus } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
 import { FaInstagram,FaWhatsapp,FaXTwitter,FaBagShopping } from "react-icons/fa6";
+import { TbTruckDelivery } from "react-icons/tb";
 import { useState } from "react";
 function Cart() {
   const [number, setNumber] = useState(0);
@@ -59,15 +60,36 @@ function Cart() {
                     <div className="bg-[#242425] border border-[#808080] w-10 h-10 rounded-[4px]"></div>
                   </div>
                   <div id='buttons' className="flex flex-row items-center justify-between gap-2">
-                    <button className="border border-black p-4 text-2xl rounded-lg flex"><FaBagShopping/>Add to Cart</button>
+                    <button className="border border-black p-4 text-2xl rounded-lg flex items-center"><FaBagShopping/>Add to Cart</button>
                     <button className="bg-secondary p-4 text-2xl text-white rounded-lg">Buy Now</button>
                   </div>
+                  <p className="text-[#006200] mt-4">Pickup & Pay on collection available</p>
                 </div>
+                <div className="flex flex-col">
+                  <p>Delivery & Returns</p>
+                  <hr className="w-full"/>
+                  <h1>Location</h1>
+                  <select className="flex flex-col border border-[#808080] rounded-lg p-2 mt-2">
+                    <option value="">Location</option>
+                    <option value="location1">Location 1</option>
+                    <option value="location2">Location 2</option>
+                    <option value="location3">Location 3</option>
+                  </select>
+                  <select className="border border-[#808080] rounded-lg p-2 mt-2">
+                    <option value="">Sub-Location</option>
+                    <option value="sublocation1">Sub-Location 1</option>
+                    <option value="sublocation2">Sub-Location 2</option>
+                    <option value="sublocation3">Sub-Location 3</option>
+                  </select>
+                </div>
+                <h1 className="flex items-center justify-center"><TbTruckDelivery/>Delivery</h1>
               </div>
             );
           })}
         </div>
-        <div id='delivery and return' className=""></div>
+        <div id='delivery and return' className="flex flex-col">
+          <h1>Delivery & Returns</h1>
+        </div>
       </div>
       <div className="Overview and similar items"></div>
     </div>
