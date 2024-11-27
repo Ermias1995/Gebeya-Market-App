@@ -117,7 +117,8 @@ function Home() {
             </div>
           </div>
           
-          <div id='Filtering buttons' className="flex flex-row items-center justify-center gap-5 p-20 max-w-[1344px]">
+
+          <div id='Filtering buttons' className=" hidden md:flex flex-row items-center justify-center gap-5 p-20 max-w-[1344px]">
             {catagory_buttons.map((button)=>{
               const { id, text } = button;
               return (
@@ -126,11 +127,25 @@ function Home() {
             })}
           </div>
 
-          <div id="collections" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 px-5 gap-y-10 gap-x-6">
+          <div className="overflow-x-auto py-4 md:hidden">
+          <div id='Filtering buttons' className="flex space-x-4 pl-4 pr-4">
+            {catagory_buttons.map((button) => {
+              const { id, text } = button;
+              return (
+                <button key={id} className="text-[#1E1E1E] border-2 border-[#C1C1C1] p-[10px] rounded-l-full rounded-r-full w-[360px] h-16 hover:bg-secondary hover:text-white hover:border-none">
+                  {text}
+                </button>
+              );
+              })}
+            </div>
+          </div>
+    
+          
+          <div id="collections" className="grid grid-cols-2 items-center md:grid-cols-6 px-16 gap-2 md:gap-y-10 md:gap-x-6 mt-3">
             {catagory_items.map((item) => {
               const { id, title, text, image } = item;
               return (
-                  <div key={id} className="m-0 p-0 flex flex-col justify-center items-center border-2 border-[#C1C1C1] px-8 py-6 rounded-2xl gap-4 min-w-[205px]">
+                  <div key={id} className="m-0 p-0 flex flex-col justify-center items-center border-2 border-[#C1C1C1] px-8 py-6 rounded-2xl gap-4 w-64 md:min-w-[205px]">
                       <div className="flex justify-center items-center bg-[#F2F2F2] rounded-2xl min-h-[100px] min-w-[143px]">
                           <img src={image} alt={title} className="object-contain" />
                       </div>
@@ -141,9 +156,9 @@ function Home() {
                   </div>
               );
             })}
-            <div id='see more button' className="col-span-6 flex justify-center items-center">
-              <button className="bg-primary text-white px-4 py-2 rounded-lg flex flex-row items-center justify-center">See more<FaAnglesRight/></button>
-            </div>
+          </div>
+          <div id='see more button' className="flex justify-center items-center mt-6">
+            <button className="bg-primary text-white px-4 py-2 mr-5 rounded-lg flex flex-row items-center justify-center">See more<FaAnglesRight/></button>
           </div>
         </div>
 
