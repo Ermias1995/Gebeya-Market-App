@@ -81,8 +81,12 @@ function Cart() {
                     <option value="sublocation2">Sub-Location 2</option>
                     <option value="sublocation3">Sub-Location 3</option>
                   </select>
+                  <h1 className="flex items-center mt-4 text-lg gap-2"><TbTruckDelivery className="text-lg"/>Delivery</h1>
+                  <p className="text-sm">Estimated delivery time is 1-12 business days </p>
+                  <p className="text-sm"><span className="font-medium">For Same-Day-Delivery:</span>F Please place your order before 12pm</p>
+                  <p className="text-sm"><span className="font-medium">Next-Day-Delivery:</span> Orders placed after 12pm will be delivered the next day.</p>
+                  <p><span className="font-medium ">Note:</span> Availability may vary by location</p>
                 </div>
-                <h1 className="flex items-center justify-center"><TbTruckDelivery/>Delivery</h1>
               </div>
             );
           })}
