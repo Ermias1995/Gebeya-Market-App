@@ -162,7 +162,7 @@ function Home() {
           </div>
         </div>
 
-        <div id='summer banner' className="relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[502px] justify-evenly" style={{ backgroundImage: `url(${summer_bg})` }}>
+        <div id='summer banner' className=" hidden md:block relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[502px] justify-evenly" style={{ backgroundImage: `url(${summer_bg})` }}>
           <div className="flex flex-col w-2/4 px-10 py-10 gap-10">
             <h1 className="text-[#9847EF] font-semibold text-[40px]">Our Curated Summer Collection</h1>
             <p className="text-[#9847EF] text-2xl">Explore our curated summer collection featuring trending styles,
@@ -178,6 +178,24 @@ function Home() {
             <div className="absolute top-[331px] left-[680px] w-14 h-14 bg-secondary rounded-full z-10"></div>
             <div className="absolute top-[251px] left-[776px] w-10 h-10 bg-[#CAD3B8] rounded-full z-10"></div>
             <div className="absolute top-[40px] left-[796px] w-10 h-10 bg-[#CAD3B8] rounded-full z-10"></div>
+          </div>
+        </div>
+
+        {/* Responsive Summer Banner */}
+        <div id='summer banner' className="md:hidden relative mr-20 ml-20 mt-[120px] border rounded-3xl bg-[#D0D0D0] h-[300px] justify-evenly">
+          <div className="flex flex-col w-2/4 px-10 py-10 gap-10">
+            <h1 className="text-[#9847EF] font-semibold text-lg">Our Curated Summer Collection</h1>
+            <p className="text-[#9847EF] text-sm">Explore our curated summer collection featuring trending styles,
+               vibrant colors and lightweight fabrics perfect for long days and nights.
+            </p>
+            <button className="absolute top-[250px] left-[50px] bg-secondary text-white p-3 font-medium w-60 h-10 rounded-lg flex items-center justify-center">Explore Now</button>
+            <div className="absolute top-[54px] left-[249px] w-4 h-4 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[53px] left-[349px] w-4 h-4 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[147px] left-[151px] w-3 h-3 bg-primary bg-opacity-50 rounded-full z-10"></div>
+            <div className="absolute top-[173px] left-[186px] w-4 h-4 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[156px] left-[257px] w-6 h-6 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[193px] left-[311px] w-10 h-10 bg-primary rounded-full z-10"></div>
+            <div className="absolute top-[15px] left-[307px] w-4 h-4 bg-[#CAD3B8] rounded-full z-10"></div>
           </div>
         </div>
 
