@@ -50,7 +50,26 @@ export const Latest_collections = [
         brand: "DIVINE",
         category: "Women",
         rating: "5k+"
-    }
+    },
+    {
+        id: 4,
+        name: "Butline Blue",
+        image: butline_blue,
+        price: 300,
+        brand: "FENDI",
+        category: "Kids",
+        rating: "2k+"
+    },
+    {
+        id: 5,
+        name: "Pink Cherry",
+        image: pink_cherry,
+        price: 180,
+        brand: "DIVINE",
+        category:"Kids",
+        rating: "2k+"
+    }    
+
 ];
 
 export const catagory_buttons = [

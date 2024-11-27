@@ -1,4 +1,5 @@
-import { cart } from "../data"
+import { cart } from "../data";
+import { Latest_collections } from "../data";
 import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight, FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
@@ -111,9 +112,44 @@ function Cart() {
             <li>Built-in arch support to help maintain healthy foot development.</li>
             <li>Soft insoles and adequate padding to support growing feet.</li>
           </ul>
+          <hr className="w-full my-3"/>
+          <div className="flex justify-start items-center">
+          {Latest_collections.map((item)=>{
+              const { id, name, image, brand, rating, price, category } = item;
+              return(
+                <div key={id} className="max-w-[435px] max-h-[497px] border-2  p-4 rounded-2xl">
+                  <div className="flex flex-col gap-4 border-[#808080]">
+                    <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl min-h-64">
+                      <img className="m-auto" src={image} alt={name} />
+                      <button className='absolute top-5 left-5 bg-white p-2 w-10 h-10 rounded-full flex items-center justify-center'><FaRegHeart/></button>
+                      <button className='bg-white p-2 w-[67px] h-[34px] items-center 
+                      justify-center border rounded-l-full rounded-r-full text-xs
+                      absolute top-5 right-5'>In Stock</button>
+                    </div>
+                    <div className="flex flex-row items-center justify-between">
+                      <h1 className="text-[#808080] border border-[#C1C1C1] rounded-l-full rounded-r-full p-1 min-w-12 flex justify-center">{category}</h1>
+                      <h1 className="text-[#808080] flex flex-row items-center"><IoStar className="text-secondary"/>{rating} rating</h1>
+                    </div>
+                  </div>
+                  <div id='brand_and_price' className="flex flex-row justify-between">
+                    <div className="flex flex-col justify-between gap-10">
+                      <div className="flex flex-col gap-0">
+                        {/* <h1 className="text-2xl font-semibold">{name}</h1> */}
+                        <h1 className="text-[#808080] text-lg">{brand}</h1>
+                      </div>
+                      <h1 className="text-2xl font-semibold">${price}</h1>
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className=""></div>
+                      <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-      <div className="Overview and similar items"></div>
     </div>
   )
 }
