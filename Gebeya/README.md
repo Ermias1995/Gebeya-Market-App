@@ -18,7 +18,6 @@ The Gebeya Market app is an e-commerce platform designed to provide a seamless s
 - Tailwind CSS
 - JavaScript
 - HTML/CSS
-- [Insert any other technologies or libraries used]
 
 ## Designed For
 
