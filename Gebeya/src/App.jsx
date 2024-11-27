@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={ <SharedLayout/>}>
         <Route index element={<Home/>}/>
-        <Route path="kids" element={<Cart/>}/>
+        <Route path="cart" element={<Cart/>}/>
         <Route path="*" element={<Error/>}/>
       </Route>
     </Routes>

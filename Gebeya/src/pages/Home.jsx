@@ -13,8 +13,8 @@ function Home() {
   return (
     <div className="box-border">
         <div id='First_section' className="grid grid-cols-3 bg-primary max-w-[1512px] selection:w-full h-[48.063rem]">
-          <div className="flex flex-col items-center justify-around">
-            <h1 className="text-6xl md:text-[7.2rem] text-white font-alfa-slab">Gebeya</h1>
+          <div className="flex flex-col md:items-center items-start justify-start pt-20 md:justify-around">
+            <h1 className="text-6xl md:text-[7.2rem] font-semibold text-white font-alfa-slab">Gebeya</h1>
             <div className="md:flex hidden items-center justify-center w-[120px] h-[120px] md:w-[16.25rem] md:h-[16.25rem] rounded-full">
               <img src={Ellipse_5} alt="Ellipse_5" />
             </div>
@@ -33,9 +33,6 @@ function Home() {
               <img src={Ellipse_4} alt="Ellipse_4"/>
             </div>  
           </div>
-
-
-
         </div>
   
         <div id='Second_section' className="">
@@ -139,11 +136,11 @@ function Home() {
             </div>
         </div>
 
-        <div id="Browse by category" className="grid grid-cols-4 px-20">
+        <div id="Browse by category" className="grid grid-cols-2 md:grid-cols-4 px-20">
           {browse_category.map((item)=>{
             const {id, name, number, image} = item;
             return(
-              <div key={id} className="flex flex-col items-center justify-center gap-6">
+              <div key={id} className="flex flex-col items-center border rounded-2xl md:border-none justify-center gap-6">
                 <div className="bg-[#F2F2F2] min-h-[300px] rounded-2xl p-5">
                   <img src={image} alt={name}/>
                 </div>
@@ -155,7 +152,6 @@ function Home() {
             );
           })}
         </div>
-
         
     </div>
   )

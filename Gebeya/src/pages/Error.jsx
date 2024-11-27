@@ -1,6 +1,6 @@
 function Error() {
   return (
-    <div>Error page</div>
+    <div>This page is under construction</div>
   )
 }
 export default Error
