@@ -3,6 +3,7 @@ import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight, FaPlus } from "reac
 import { FaMinus } from "react-icons/fa";
 import { IoStar } from "react-icons/io5";
 import { FaInstagram,FaWhatsapp,FaXTwitter,FaBagShopping } from "react-icons/fa6";
+import { MdAssignmentReturn } from "react-icons/md";
 import { TbTruckDelivery } from "react-icons/tb";
 import { useState } from "react";
 function Cart() {
@@ -14,7 +15,8 @@ function Cart() {
           {cart.map((item)=>{
             const {id, name, image,image_1, image_2, image_3, price, brand, category, rating} = item;
             return(
-              <div key={id} id='Images and Discreption' className="flex justify-start">
+              <div key={id} id='Images and Discreption' className="flex justify-center p-4 gap-4">
+                <div className="flex border border-[#808080] rounded-2xl p-4">
                 <div id='images' className="flex flex-col items-center justify-center w-[321px] gap-2">
                   <div id='main image' className="bg-[#F2F2F2] border rounded-2xl">
                     <img src={image} alt={name}/>
@@ -65,7 +67,8 @@ function Cart() {
                   </div>
                   <p className="text-[#006200] mt-4">Pickup & Pay on collection available</p>
                 </div>
-                <div className="flex flex-col">
+                </div>
+                <div className="flex flex-col border border-[#808080] rounded-2xl p-4 w-1/3">
                   <p>Delivery & Returns</p>
                   <hr className="w-full"/>
                   <h1>Location</h1>
@@ -86,6 +89,10 @@ function Cart() {
                   <p className="text-sm pl-7"><span className="font-medium">For Same-Day-Delivery:</span>F Please place your order before 12pm</p>
                   <p className="text-sm pl-7"><span className="font-medium">Next-Day-Delivery:</span> Orders placed after 12pm will be delivered the next day.</p>
                   <p><span className="font-medium pl-7">Note:</span> Availability may vary by location</p>
+
+                  <h1 className="flex items-center mt-4 text-lg gap-2"><MdAssignmentReturn  className="text-2xl"/>Return Policy</h1>
+                  <p className="text-sm pl-7">Guaranteed 7-day return policy</p>
+                  <p className="text-sm pl-7">For details about return shipping options, please visit our <span className="font-medium">Contact page</span></p>
                 </div>
               </div>
             );
