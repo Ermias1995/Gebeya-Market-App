@@ -8,8 +8,10 @@ import { Latest_collections } from "../data";
 import { catagory_buttons } from "../data";
 import { catagory_items } from "../data";
 import { browse_category } from "../data";
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="box-border">
         <div id='First_section' className="grid grid-cols-3 bg-primary max-w-[1512px] selection:w-full h-[48.063rem]">
@@ -47,7 +49,7 @@ function Home() {
           </div>
 
           <div id='1st_sub_section' className="hidden md:grid grid-cols-3 pl-20 pr-20 gap-4">
-            {Latest_collections.map((item)=>{
+            {Latest_collections.filter(item=> item.id === 1 || item.id === 2 || item.id === 3).map((item)=>{
               const { id, name, image, brand, rating, price, category } = item;
               return(
                 <div key={id} className="max-w-[435px] max-h-[497px] border-2  p-4 rounded-2xl">
@@ -74,7 +76,10 @@ function Home() {
                     </div>
                     <div className="flex flex-col justify-between">
                       <div className=""></div>
-                      <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
+                      <button 
+                        className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl"
+                        onClick={() => navigate('/cart')}>Add to cart
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -84,7 +89,7 @@ function Home() {
 
           <div className="overflow-x-auto py-4 md:hidden">
             <div id='1st_sub_section_responsive' className="flex space-x-4 pl-4 pr-4">
-              {Latest_collections.map((item) => {
+              {Latest_collections.filter(item => item.id === 1 || item.id === 2 || item.id === 3).map((item) => {
                 const { id, name, image, brand, rating, price, category } = item;
                 return (
                   <div key={id} className="flex-none w-[360px] max-h-[497px] border-2 p-4 rounded-2xl">
@@ -109,6 +114,11 @@ function Home() {
                       <div className="flex flex-col justify-between">
                         <div className=""></div>
                         <button className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl">Add to cart</button>
+                      
+                      <button 
+                        className="bg-secondary text-xl text-white h-[74px] p-3 rounded-l-2xl rounded-r-2xl"
+                        onClick={() => navigate('/cart')}>Add to cart
+                      </button>
                       </div>
                     </div>
                   </div>
