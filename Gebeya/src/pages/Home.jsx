@@ -20,10 +20,12 @@ function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-around">
-            <div className="flex items-center justify-center w-[16.25rem] h-[16.25rem] rounded-full">
+            <div className="flex items-center justify-center w-56 h-56 md:w-[16.25rem] md:h-[16.25rem] rounded-full">
               <img src={Ellipse_3} alt="Ellipse_3"/>
             </div>
-            <button className='w-[21rem] h-[4.125rem] bg-secondary text-[#222222] rounded-lg'>Explore Now</button>
+            <p className='text-white text-xl md:hidden'>Discover a world of convenience with our user-friendly platform, 
+              curaated collections, and exceptional customer service</p>
+            <button className='w-[21rem] h-[4.125rem] bg-secondary text-white md:text-[#222222] rounded-lg'>Explore Now</button>
           </div>
           <div className="flex flex-col items-center justify-around">
             <p className='text-white text-xl hidden md:block'>Discover a world of convenience with our user-friendly platform, 
