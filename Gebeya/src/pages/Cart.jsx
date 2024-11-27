@@ -113,11 +113,12 @@ function Cart() {
             <li>Soft insoles and adequate padding to support growing feet.</li>
           </ul>
           <hr className="w-full my-3"/>
-          <div className="flex justify-start items-center">
-          {Latest_collections.map((item)=>{
+          <p className="font-semibold text-2xl">Similar items you may like</p>
+          <div className="flex items-center gap-4 mt-4">
+          {Latest_collections.filter(item => item.id === 4 || item.id === 5).map((item)=>{
               const { id, name, image, brand, rating, price, category } = item;
               return(
-                <div key={id} className="max-w-[435px] max-h-[497px] border-2  p-4 rounded-2xl">
+                <div key={id} className="min-w-[435px] min-h-[497px] border-2  p-4 rounded-2xl">
                   <div className="flex flex-col gap-4 border-[#808080]">
                     <div className="relative bg-[#F2F2F2] items-center justify-center border rounded-2xl min-h-64">
                       <img className="m-auto" src={image} alt={name} />
