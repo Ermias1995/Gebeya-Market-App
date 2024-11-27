@@ -22,7 +22,7 @@ function Navbar() {
       {isMoreOpen && (
         <div className=" relative group">
           <div className="absolute items-center justify-center w-[207px] left-0  bg-white group-hover:block border border-[#C1C1C1]">
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row gap-5 py-2 items-center justify-center">
               <img src={Logo} alt="Logo" className="h-10"/>
               <button onClick={()=>setIsMoreOpen(false)} className='flex text-xl items-center justify-center'><RxCross2 /></button>
             </div>
@@ -96,8 +96,8 @@ function Navbar() {
           <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
           <p className='flex items-center hover:font-semibold hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
         </div>
-        <div className="relative flex items-center justify-center w-11 h-11 bg-primary text-white rounded-full">
-          <p className='absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full'>2</p>
+        <div className="relative flex items-center justify-center w-11 h-11 md:bg-primary bg-[#222222] text-white rounded-full">
+          <p className='hidden absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 md:flex items-center justify-center rounded-full'>2</p>
           <FaBagShopping className='text-white'/>
     </div>
     </div>
