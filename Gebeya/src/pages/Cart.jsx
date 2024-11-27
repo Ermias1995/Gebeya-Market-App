@@ -1,6 +1,6 @@
 import { cart } from "../data"
 import { FaAngleLeft, FaAngleRight,FaRegHeart,FaAnglesRight } from "react-icons/fa6";
-
+import { FaInstagram,FaWhatsapp,FaXTwitter } from "react-icons/fa6";
 function Cart() {
   return (
     <div>
@@ -19,6 +19,12 @@ function Cart() {
                     <img className='bg-[#F2F2F2] w-14 h-14 rounded-lg' src={image_1} alt={name} />
                     <img className='bg-[#F2F2F2] w-14 h-14 rounded-lg' src={image_2} alt={name} />
                     <img className='bg-[#F2F2F2] w-14 h-14 rounded-lg' src={image_3} alt={name} />
+                  </div>
+                  <p className="text-lg mt-5">Share this Product</p>
+                  <div id='share links' className="flex items-center justify-start gap-4">
+                    <button className="text-black text-3xl"><FaInstagram/></button>
+                    <button className="text-black text-3xl"><FaWhatsapp/></button>
+                    <button className="text-black text-3xl"><FaXTwitter/></button>
                   </div>
                 </div>
                 <div id='Discreption' className="">
