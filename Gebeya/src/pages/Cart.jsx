@@ -31,7 +31,7 @@ function Cart() {
                   <h1 className="text-4xl font-semibold">{name}</h1>
                   <p className="text-lg font-medium">Brand: {brand}</p>
                   <hr className="my-2"/>
-                  <p className=""><span className="font-medium text-2xl">${price}</span> <span className="line-through text-[#808080] text-base">$300</span> <span>-50%</span></p>
+                  <p className=""><span className="font-medium text-2xl">${price}</span> <span className="line-through text-[#808080] text-base">$300</span> <span className="">-50%</span></p>
                   <p>50 units left</p>
                   <p>+ shipping fee may vary on location</p>
                   <p>{rating} rating</p>
