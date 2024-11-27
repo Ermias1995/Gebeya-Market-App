@@ -4,7 +4,7 @@ import footer_icon from '../assets/footer_icon.png';
 function Footer() {
   return (
     <>
-    <div className='flex justify-between bg-primary min-h-[423px] mt-40'>
+    <div className='flex flex-col-reverse md:flex justify-between bg-primary min-h-[423px] mt-40'>
       <div id='Logo side' className="flex flex-col items-center justify-center">
         <div className="flex ml-14">
           <img src={footer_icon} alt="Logo"/>

@@ -145,7 +145,7 @@ function Home() {
             {catagory_items.map((item) => {
               const { id, title, text, image } = item;
               return (
-                  <div key={id} className="m-0 p-0 flex flex-col justify-center items-center border-2 border-[#C1C1C1] px-8 py-6 rounded-2xl gap-4 w-64 md:min-w-[205px]">
+                  <div key={id} className="m-0 p-0 flex flex-col justify-center items-center border-2 border-[#C1C1C1] px-8 py-6 rounded-2xl gap-4  md:min-w-[205px]">
                       <div className="flex justify-center items-center bg-[#F2F2F2] rounded-2xl min-h-[100px] min-w-[143px]">
                           <img src={image} alt={title} className="object-contain" />
                       </div>
