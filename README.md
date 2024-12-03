@@ -1,6 +1,12 @@
 # Gebeya Market App
-Figma design given:- [https://www.figma.com/design/bNMt7tMAXB2563nR38s6ew/Gebeya-market-app-(Copy)?node-id=0-1&t=oCJiPotjt3HLZsEn-1]
-What I implemented-Link:- [https://gebeyamarket.netlify.app/]
+
+<a href="https://gebeyamarket.netlify.app/" target="_blank" style="font-size: 20px; text-decoration: none;">
+  <img src="https://img.shields.io/badge/Live%20Demo-Check%20it%20out-brightgreen" alt="Live Demo" style="height: 40px;">
+</a>
+<a href="https://www.figma.com/design/bNMt7tMAXB2563nR38s6ew/Gebeya-market-app-(Copy)?node-id=0-1&t=oCJiPotjt3HLZsEn-1" target="_blank" style="font-size: 20px; text-decoration: none;">
+  <img src="https://img.shields.io/badge/Figma%20Design-View%20Design-blue" alt="Figma Design" style="height: 40px;">
+</a>
+
 ## Overview
 
 The Gebeya Market app is an e-commerce platform designed to provide a seamless shopping experience for users. Built with modern web technologies, this application features a user-friendly interface that allows customers to browse, search, and purchase a wide variety of products, including categories such as Men, Women, Kids, and Accessories.
