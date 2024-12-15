@@ -4,7 +4,7 @@ import { BiTransfer } from "react-icons/bi";
 
 function Checkout() {
   return (
-    <div className='flex flex-col gap-10'>
+    <div className='flex flex-col gap-10 pt-32'>
       <div className="flex flex-col md:flex-row justify-center gap-4">
         <div className=" flex flex-col p-4 border border-[#808080] rounded-lg">
           <h1 className='font-semibold text-2xl my-4'>Shipping Address</h1>

@@ -15,7 +15,7 @@ function Cart() {
     <div>
       <div className="">
 
-        <div id='product' className="flex cols ">
+        <div id='product' className="flex cols pt-32">
           {cart.map((item)=>{
             const {id, name, image,image_1, image_2, image_3, price, brand, category, rating} = item;
             return(
