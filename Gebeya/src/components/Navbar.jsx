@@ -44,8 +44,6 @@ function Navbar() {
         </div> 
       )
       }
-      
-      {/* ///////////////////// */}
 
       <div className="relative md:block hidden group" onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}>
@@ -59,48 +57,48 @@ function Navbar() {
         </div>
       </div>
 
-        <div className="hidden md:flex items-center space-x-3">
-            <NavLink to='/' className="hover:font-semibold">Home</NavLink>
-            <NavLink to='/under' className="hover:font-semibold">Men</NavLink>
-            <NavLink to='/under' className="hover:font-semibold">Women</NavLink>
-            <NavLink to='/under' className="hover:font-semibold">Accessories</NavLink>
-        </div>
+      <div className="hidden md:flex items-center space-x-3">
+        <NavLink to='/' className="hover:font-semibold">Home</NavLink>
+        <NavLink to='/under' className="hover:font-semibold">Men</NavLink>
+        <NavLink to='/under' className="hover:font-semibold">Women</NavLink>
+        <NavLink to='/under' className="hover:font-semibold">Accessories</NavLink>
+      </div>
 
-        <div className="relative hidden md:block group" onMouseEnter={()=>setIsOpen(true)}
-                  onMouseLeave={()=>setIsOpen(false)}>
-          <NavLink to='/' className='flex flex-row items-center hover:font-semibold'>
-            {isOpen ? <>More<RiArrowUpSLine/></> : <>More<RiArrowDownSLine/></>}
-          </NavLink>
-          <div className="absolute items-center justify-center pt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Perfumes</a>
-            <hr></hr>
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Jewelries</a>
-            <hr></hr>
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Gym wears</a>
-            <hr></hr>
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Vintage wears</a>
-            <hr></hr>
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Sport wears</a>
-            <hr></hr>
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Pyjamas</a>
-            <hr></hr>
-            <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Slippers</a>
-          </div>
+      <div className="relative hidden md:block group" onMouseEnter={()=>setIsOpen(true)}
+                onMouseLeave={()=>setIsOpen(false)}>
+        <NavLink to='/' className='flex flex-row items-center hover:font-semibold'>
+          {isOpen ? <>More<RiArrowUpSLine/></> : <>More<RiArrowDownSLine/></>}
+        </NavLink>
+        <div className="absolute items-center justify-center pt-4 p-5 w-[194px] left-0 hidden bg-white group-hover:block border border-[#C1C1C1]">
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Perfumes</a>
+          <hr></hr>
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Jewelries</a>
+          <hr></hr>
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Gym wears</a>
+          <hr></hr>
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Vintage wears</a>
+          <hr></hr>
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Sport wears</a>
+          <hr></hr>
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Pyjamas</a>
+          <hr></hr>
+          <a href="/under" className="block ml-5 px-4 py-2 hover:font-semibold">Slippers</a>
         </div>
+      </div>
 
-        <div className="flex items-center">
-          <IoSearch className="absolute transform translate-x-1"/>
-          <input type="text" placeholder={`Search`} className="h-10 p-2 pl-6 border rounded-l-2xl"/>
-          <button className="h-10 w-16 p-2 bg-primary text-white rounded-r-2xl flex items-center justify-center"><IoSearch className='text-xl'/></button>
-        </div>
-        <div className="hidden md:flex items-center">
-          <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
-          <p className='flex items-center hover:font-semibold hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
-        </div>
-        <div className="relative flex items-center justify-center w-8 h-8 md:w-11 md:h-11 md:bg-primary bg-[#222222] text-white rounded-full hover:cursor-pointer">
-          <p className='hidden absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 md:flex items-center justify-center rounded-full'>2</p>
-          <FaBagShopping className='text-white'/>
-        </div>
+      <div className="flex items-center">
+        <IoSearch className="absolute transform translate-x-1"/>
+        <input type="text" placeholder={`Search`} className="h-10 p-2 pl-6 border rounded-l-2xl"/>
+        <button className="h-10 w-16 p-2 bg-primary text-white rounded-r-2xl flex items-center justify-center"><IoSearch className='text-xl'/></button>
+      </div>
+      <div className="hidden md:flex items-center">
+        <img src={Flag} alt="Flag" className="h-6 border rounded-full"/>
+        <p className='flex items-center hover:font-semibold hover:cursor-pointer'>EN/Currency <RiArrowDownSLine/></p>
+      </div>
+      <div className="relative flex items-center justify-center w-8 h-8 md:w-11 md:h-11 md:bg-primary bg-[#222222] text-white rounded-full hover:cursor-pointer">
+        <p className='hidden absolute top-0 right-0 bg-red-600 text-white text-xs w-4 h-4 md:flex items-center justify-center rounded-full'>2</p>
+        <FaBagShopping className='text-white'/>
+      </div>
     </div>
   )
 }
