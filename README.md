@@ -1,6 +1,6 @@
 # Gebeya Market App
 
-<a href="https://gebeyamarket.netlify.app/" target="_blank" style="font-size: 20px; text-decoration: none;">
+<a href="https://gebeyamarketapp.netlify.app/" target="_blank" style="font-size: 20px; text-decoration: none;">
   <img src="https://img.shields.io/badge/Live%20Demo-Check%20it%20out-brightgreen" alt="Live Demo" style="height: 40px;">
 </a>
 <a href="https://www.figma.com/design/bNMt7tMAXB2563nR38s6ew/Gebeya-market-app-(Copy)?node-id=0-1&t=oCJiPotjt3HLZsEn-1" target="_blank" style="font-size: 20px; text-decoration: none;">
