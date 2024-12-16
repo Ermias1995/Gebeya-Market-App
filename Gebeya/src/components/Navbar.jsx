@@ -16,13 +16,13 @@ function Navbar() {
     console.log(isMoreOpen);
 
   return (
-    <div className="flex fixed items-center bg-white justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
+    <div className="flex fixed z-20 items-center bg-white justify-center space-x-5 w-full p-4 text-[#1E1E1E] text-base">
       <button onClick={()=>setIsMoreOpen(true)} className='flex text-xl items-center justify-center md:hidden'><VscThreeBars/></button>
       <img src={Logo} alt="Logo" className="h-10"/>
 
       {/* Responsive Nabar */}
       {isMoreOpen && (
-        <div className="absolute top-0 left-0 items-center justify-center w-[207px] bg-white group-hover:block border border-[#C1C1C1]">
+        <div className="absolute top-0 left-0 items-center justify-center w-[207px] bg-white group-hover:block border border-[#C1C1C1] p-5 py-8">
           <div className="flex flex-row gap-4 md:py-2 items-center justify-center">
             <img src={Logo} alt="Logo" className="h-10" onClick={()=>navigate('/')}/>
             <button onClick={()=>setIsMoreOpen(false)} className='flex text-xl items-center justify-center'><RxCross2 /></button>

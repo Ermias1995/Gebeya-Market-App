@@ -16,7 +16,7 @@ function Home() {
     <div className="box-border">
         <div id='First_section' className="grid grid-cols-3 bg-primary max-w-[1512px] selection:w-full h-[48.063rem] pt-32">
           <div className="flex flex-col md:items-center items-start justify-start pt-20 md:justify-around">
-            <h1 className="text-5xl md:text-[7.2rem] font-semibold text-white font-alfa-slab">Gebeya</h1>
+            <h1 className="text-5xl md:text-[6.8rem] font-semibold text-white font-alfa-slab">Gebeya</h1>
             <div className="md:flex hidden items-center justify-center w-[120px] h-[120px] md:w-[16.25rem] md:h-[16.25rem] rounded-full">
               <img src={Ellipse_5} alt="Ellipse_5" />
             </div>

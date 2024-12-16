@@ -66,7 +66,7 @@ function Checkout() {
           <button className='w-[350px] h-[53px] bg-secondary text-white rounded-lg'>Place Order</button>
         </div>
       </div>
-      <div className="flex flex-col justify-start border border-[#808080] rounded-lg p-4 w-4/5 md:ml-44">
+      <div className="flex flex-col justify-start border border-[#808080] rounded-lg p-4 w-3/4 md:ml-44">
         <h1 className="font-semibold text-2xl my-4">Payment Method</h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:w-[750px] mt-4">
           <div className="flex flex-col items-center justify-center hover:bg-secondary hover:text-white text-[#808080] hover:cursor-pointer w-[266px] h-[136px] border border-[#808080] rounded-lg">
